@@ -1,0 +1,44 @@
+<div class="container-fluid">
+
+  <div class="form-group">
+    <div class="row mt-5 mb-3">
+      <div class="col-4">
+        <label for="cep" class="col-form-label">CEP: </label>
+        <input type="text" class="form-text form-control" id="cep" [(ngModel)]="cep.cep" />
+      </div>
+
+      <div class="col-4 d-flex align-items-end">
+        <button type="button" class="btn btn-info" (click)="buscarCep()">Buscar</button>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="logradouro" class="col-form-label">Logradouro: </label>
+        <input type="text" class="form-text form-control" id="logradouro" [(ngModel)]="cep.logradouro" />
+      </div>
+      <div class="col-4">
+        <label for="complemento" class="col-form-label">Complemento: </label>
+        <input type="text" class="form-text form-control" id="complemento" [(ngModel)]="cep.complemento" />
+      </div>
+
+      <div class="col-4">
+        <label for="bairro" class="col-form-label">Bairro: </label>
+        <input type="text" class="form-text form-control" id="bairro" [(ngModel)]="cep.bairro" />
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="localidade" class="col-form-label">Localidade: </label>
+        <input type="text" class="form-text form-control" id="localidade" [(ngModel)]="cep.localidade" />
+      </div>
+
+      <div class="col-4">
+        <label for="uf" class="col-form-label">UF: </label>
+        <input type="text" class="form-text form-control" id="uf" [(ngModel)]="cep.uf" />
+      </div>
+    </div>
+
+  </div>
+
+</div>
